@@ -1,24 +1,53 @@
 /* Body text */
 body {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  line-height:1.5;
 
+  background-color:hsl(43, 37%, 85%);
+  color: hsl(123, 37%, 95%);
+  /*gradient*/
+  background-image: linear-gradient(hsl(43, 37%, 85%), hsl(43, 37%, 65%));
+  /*stretch to bottom*/
+  min-height:100vh;
 }
 
 /* Call-to-action container */
 .cta {
+max-width: 30ch;
+background-color:hsl(43, 20%, 28%);
 
+padding: 2rem;
+border-radius: 1rem;
+
+margin: auto;
+margin-top: 5rem;
 }
 
 /* Call to Action "button" */
 .cta a, .cta a:visited {
+  font-family: "Carter One", serif;
+  text-decoration: none;
 
+  background-color:hsl(174, 35%, 65%);
+  color:hsl(174, 35%, 15%);
+
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+
+  margin: auto;
+  display:block;
+  width: fit-content;
 }
 
 /* Hover state */
 .cta a:hover {
-
+  background-color:hsl(174, 45%, 35%);
+  color:hsl(174, 33%, 60%);
 }
 
 /* Click state */
 .cta a:active {
-
+  background-color:hsl(43, 20%, 10%);
+  color:hsl(43, 20%, 40%);
 }
